@@ -1,4 +1,8 @@
 *{
+=======
+
+body {
+>>>>>>> c0e930f2eec8277b76fc57dfb2e72d6574ee316a
     font-family: Lato;
     scroll-behavior: smooth;
 }
@@ -136,6 +140,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+<<<<<<< HEAD
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -156,3 +161,6 @@
 .hero-text{
     font-weight: bold;
 }
+=======
+}
+>>>>>>> c0e930f2eec8277b76fc57dfb2e72d6574ee316a
