@@ -196,3 +196,24 @@ header {
 li{
   list-style: none;
 }
+
+.toggle-img{
+  height: 15px;
+  width: 15px;
+  margin-top: 7px;
+  background: url(./assets/Plus.svg);
+  margin-right: 15px;        
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.toggle-img-minus{
+  height: 15px;
+  width: 15px;
+  margin-top: 7px;
+  background: url(./assets/Minus.svg);
+  margin-right: 15px;        
+  background-size: contain;
+  background-repeat: no-repeat;
+}
