@@ -7,8 +7,10 @@ header {
   height:140vh;
   min-height:400px;
   background-size:contain;
-  background-image:url('./assets/landscape5.jpg');
+  width: 100%;
+  background-image:url('./assets/landscape8.jpg');
   background-repeat: no-repeat;
+  
 }
 
 .navbar ul li a {
