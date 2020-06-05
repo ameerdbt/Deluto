@@ -158,15 +158,15 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#services .collapse{
+.body{
     background-color: #F7F7F7;
     padding: 20px;
+    color: #4A4A4A;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    font-size: 20px;
 
 }
-#services .collapse p{
-  font-size: 20px;
-}
+
 .card{
     padding-left: 0px;
     padding-right: 0px;
@@ -215,4 +215,18 @@ li{
   margin-right: 15px;        
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.text{
+  height: 29px;
+  width: 439px;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+.img-fluid{
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); 
 }
