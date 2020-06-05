@@ -1,16 +1,15 @@
-*{
-    font-family: Lato;
-    scroll-behavior: smooth;
+* {
+  font-family: Lato;
+  scroll-behavior: smooth;
 }
 
 header {
-  height:140vh;
-  min-height:400px;
-  background-size:contain;
+  height: 140vh;
+  min-height: 400px;
+  background-size: contain;
   width: 100%;
-  background-image:url('./assets/landscape11.jpg');
+  background-image: url("./assets/landscape11.jpg");
   background-repeat: no-repeat;
-  
 }
 .navbar ul li a {
   /* color: #ffffff; */
@@ -20,213 +19,218 @@ header {
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 #header {
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 20px 0;
-    font-family: ".SF NS Display";
-    /* background-image: url("assets/landscape1.JPG"); */
-    background-size: cover;
-    /* margin-bottom: 200px; */
-    }
-  
-  #header .logo {
-    font-size: 32px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  #header .logo a {
-    color: #fff;
-  }
-  
-  #header .logo img {
-    max-height: 40px;
-  }
-  
- 
-
-  #hero {
-    width: 100%;
-    height: 100vh;
-    background: url("assets/landscape5.JPG") top center;
-    background-size: cover;
-    position: relative;
-    top: 0;
-  }
-  
-  #hero:before {
-    content: "";
-    
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  #hero .hero-container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    padding: 0 15px;
-  }
-  
-  
-  #hero h1 {
-    color: #FFFFFF;
-    font-family: Lato;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 48px;
-  }
-  #hero p{
-    height: 11%;
-    width: 52%;
-    color: #FFFFFF;
-    font-family: Lato;
-    font-size: 22px;
-    letter-spacing: 0;
-    line-height: 28px;
-  }
- 
-  
-  section {
-    padding: 60px 0;
-    overflow: hidden;
-  } 
-  
-  .carousel-text{
-      font-family: Lato;
-      font-size: 18px;
-  }
-  
-  .item{
-    text-align: start;
-  }
-  
-  
-  .logos {
-    display: flex;
-    flex-direction: column;
-    margin-top: -30px;
-    flex-wrap: wrap;
-    text-align: center;
-    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  }
- 
- .title{
-     text-align: center;
- }
-.navbar{
-     text-align: right;
-
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  font-family: ".SF NS Display";
+  /* background-image: url("assets/landscape1.JPG"); */
+  background-size: cover;
+  /* margin-bottom: 200px; */
 }
- 
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("assets/landscape5.JPG") top center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+
+#hero:before {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 15px;
+}
+
+#hero h1 {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
+}
+#hero p {
+  height: 11%;
+  width: 52%;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.carousel-text {
+  font-family: Lato;
+  font-size: 18px;
+}
+
+.item {
+  text-align: start;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+  flex-wrap: wrap;
+  text-align: center;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.title {
+  text-align: center;
+}
+.navbar {
+  text-align: right;
+}
+
 .navbar ul li a {
-    color: white;
-    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  }
-
-.yellowline{
-      margin-top: -35px ;
-
-  }
-
-.contact-text{
-    font-size : 20px;
-    font-family: Lato;
+  color: white;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.footer{
-    border-top: 1px solid #E0E0E0;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.body{
-    background-color: #F7F7F7;
-    padding: 20px;
-    color: #4A4A4A;
-    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    font-size: 20px;
-
+.yellowline {
+  margin-top: -35px;
 }
 
-.card{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    box-shadow: 0 2px 13px 0 rgba(150,150,150,0.2);
+.contact-text {
+  font-size: 20px;
+  font-family: Lato;
 }
 
-
-.hero-text{
-    font-weight: bold;
+.footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-#Banner{
-    background-image: url("assets/landscape1.jpg");
-}
-
-.details{
+.body {
+  background-color: #f7f7f7;
+  padding: 20px;
+  color: #4a4a4a;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-size: 20px;
 }
 
-.services-list li a{
+.card {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  box-shadow: 0 2px 13px 0 rgba(150, 150, 150, 0.2);
+}
+
+.hero-text {
+  font-weight: bold;
+}
+
+#Banner {
+  background-image: url("assets/landscape1.jpg");
+}
+
+.details {
+  font-size: 20px;
+}
+
+.services-list li a {
   color: black;
   text-decoration: none;
 }
-li{
+li {
   list-style: none;
 }
 
-.toggle-img{
+.toggle-img {
   height: 15px;
   width: 15px;
   margin-top: 7px;
   background: url(./assets/Plus.svg);
-  margin-right: 15px;        
+  margin-right: 15px;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.toggle-img-minus{
+.toggle-img-minus {
   height: 15px;
   width: 15px;
   margin-top: 7px;
   background: url(./assets/Minus.svg);
-  margin-right: 15px;        
+  margin-right: 15px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.text{
+.text {
   height: 29px;
   width: 439px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Lato;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 29px;
 }
-.img-fluid{
-  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); 
+.img-fluid {
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    margin-bottom: -500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    margin-bottom: -642px;
+  }
+  .navbar-toggler {
+    background-color: beige !important;
+  }
 }
