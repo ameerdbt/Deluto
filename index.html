@@ -173,7 +173,7 @@
                       >
                       <div
                       class="toggle-img toggle-img-minus mt-2"
-                      
+                      id="main1"
                     ></div>
                         Engineering and Procurement (E&P)
                       </a>
@@ -206,7 +206,7 @@
                       >
                       <div
                       class="toggle-img toggle-img-plus mt-2"
-                      
+                      id="main2"
                     ></div>
                         Maintenance
                       </a>
@@ -240,7 +240,7 @@
                       >
                       <div
                       class="toggle-img toggle-img-plus mt-2"
-                      
+                      id="main3"
                     ></div>
                         Supplies & Logistics
                       </a>
@@ -385,12 +385,15 @@
         });
         $("#maintenance").click(()=>{
           $("#img").attr('src','./assets/maintenance.jpg')
+          $("#main2").toggleClass("toggle-img-minus");
         })
         $("#supp").click(()=>{
           $("#img").attr('src','./assets/suppliance.jpg')
+          $("#main3").toggleClass("toggle-img-minus");
         })
         $("#eng").click(()=>{
           $("#img").attr('src','./assets/Bitmap Copy 2.svg')
+          $("#main1").toggleClass("toggle-img-minus");
         })
 
         window.addEventListener("scroll", () => {
