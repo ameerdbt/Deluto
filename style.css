@@ -277,4 +277,32 @@ li {
   .navbar-toggler {
     background-color: beige !important;
   }
+  #banner {
+    margin-top: -47px;
+}
+.title1 {
+  font-size: 129%;
+  position: absolute;
+  color: #fff;
+  font-family: Helvetica;
+  top: 12%;
+  left: 7%;
+  letter-spacing: -0.2px;
+  line-height: 46px;
+  font-weight: bold;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.sub-title {
+  height: 90px;
+  width: 100%;
+  color: #FFFFFF;
+  top: 29%;
+  left: 7%;
+  position: absolute;
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
 }
