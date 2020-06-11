@@ -1,22 +1,63 @@
 * {
-  font-family: Lato;
+  font-family: Helvetica;
   scroll-behavior: smooth;
 }
-
-header {
-  height: 140vh;
-  min-height: 400px;
-  background-size: contain;
-  width: 100%;
-  background-image: url("./assets/landscape11.jpg");
-  background-repeat: no-repeat;
+@font-face {
+  font-family: Helvetica;
+  src: url(./assets/Helvetica-Font/helvetica-light-587ebe5a59211.ttf);
 }
+
+
 .navbar ul li a {
   /* color: #ffffff; */
-  font-weight: 800;
+  font-weight: bolder;
   display: flex;
   justify-content: space-around;
+  height: 21px;
+ font-weight: 600;
+  /* color: #4A4A4A; */
+  font-family: Helvetica;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.title1 {
+  font-size: 300%;
+  position: absolute;
+  color: #fff;
+  font-family: Helvetica;
+  top: 52%;
+  left: 7%;
+  letter-spacing: 0.8px;
+  line-height: 65px;
+  font-weight: bold;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.sub-title{
+  height: 90px;
+  width: 601px;
+  color: #FFFFFF;
+  top: 80%;
+  left: 7%;
+  position: absolute;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.special-text{
+  padding: 8px 5px;
+  background-color: #ffd600;
+  color: #000;
+}
+
+#banner{
+  margin-top: -109px;
+}
+#banner img{
+  filter: brightness(50%)
 }
 #header {
   transition: all 0.5s;
@@ -176,6 +217,9 @@ section {
 
 .details {
   font-size: 20px;
+  font-style: Helvetica;
+  font-weight: lighter;
+
 }
 
 .services-list li a {

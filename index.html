@@ -12,57 +12,58 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script src="http://maps.google.com/maps/api/js?sensor=false" 
+    type="text/javascript"></script>
 
     <title>Deluto</title>
   </head>
   <body>
-    <header id="nav"></header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-      <div class="container">
-        <a href="#nav" class="navbar-brand">
-          <img src="./assets/logo.svg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar1"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+    <section style=" margin-top: -52px;">
+      <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="#" class="navbar-brand d-flex">
+            <img src="./assets/deluto copy 5.svg" class="nav-img " alt=""  />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#about">About Us</a>
+              <a class="nav-link" href="#about" style=" margin-right: 40px;">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#services">Our Services</a>
+              <a class="nav-link" href="#services" style=" margin-right: 40px;">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#team">Our Team</a>
+              <a class="nav-link" href="#team" style=" margin-right: 40px;">Our Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact Us</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
+          </div>
+        </nav>
+      </header>
+    </section>
 
-    <!-- <section id="hero"> -->
+    <section id="banner">
+      <img src="./assets/landscape.jpg" width="100%" alt="">
+      <p class="title1">Providing Cutting Edge <br> Services in <span class="special-text" id="special" ></span> </p>
+      <p class="sub-title">At deluto, we provide top-notch engineering services from conceptual design to execution across the oil and gas industry.</p>
 
-    <!-- <div class="hero-container"> -->
+    </section>
 
-    <!-- <p class = "hero-text">
-      <h1>Providing Cutting Edge <br> Services in Engineering & Procurement</h1>
-      At Deluto, we provide top-notch engineering services from <br>
-      conceptual design through to detailed design across the oil and gas <br>
-      industry.
 
-    </p>  -->
-
-    <!-- </section>  -->
+  
 
     <main id="main">
       <!--About Section-->
@@ -97,7 +98,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="item">
-                <img src="assets/Group 10.svg" class="img-fluid" />
+                <img src="./assets/Promotion, Rocket.svg" class="img-fluid" />
                 <h4 style="font-weight: 600;">Vision</h4>
                 <p class="details">
                   Deluto Energy’s vision is becoming a global leader in the
@@ -108,7 +109,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="item">
-                <img src="assets/Group 11.svg" class="img-fluid" />
+                <img src="./assets/Promotion.svg" class="img-fluid" />
                 <h4 style="font-weight: 600;">Mission</h4>
                 <p class="details">
                   Our mission is to provide world class services using cutting
@@ -119,7 +120,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="item">
-                <img src="assets/Group 8.svg" class="img-fluid" />
+                <img src="./assets/Business, Chart.13.svg" class="img-fluid" />
                 <h4 style="font-weight: 600;">Core Values</h4>
                 <p class="details">
                   Our business operations are guided by our core values of
@@ -318,7 +319,7 @@
           <br />
           <div class="row">
             <div class="col-lg-6 order-1 order-lg-2">
-              <img src="assets/Group 3676 Copy.svg" class="img-fluid" alt="" />
+              <div id="map" style="width: 500px; height: 400px;"></div>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
               <p class="contact-text">
@@ -375,6 +376,36 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      var i = 0;
+      var txt_array = ["Engineering & Procurement.", "Maintenance.", "Supplies & Logistics."];
+      var speed = 150, count = -1;
+      
+      setInterval(function(){
+          document.getElementById("special").innerHTML = ""
+        count++;
+        let i = 0;
+          if(count >= 3) count = 0;
+          txt = change_txt(txt_array, count);
+          typeWriter();
+      }, 4000)
+      
+      function change_txt(txt_array, index){
+        let current_txt = txt_array[index];
+          return current_txt;
+      }
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("special").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+        else if (i >= txt.length - 1){
+          i = 0;
+        }
+      }
+      </script>
+    <script>
       $(document).ready(function () {
         var counter1 = (counter2 = counter3 = 0);
         $(".toggle-img").click(function () {
@@ -407,5 +438,30 @@
       
       });
     </script>
+      <script type="text/javascript">
+        var locations = [
+          ['Lagos Office', 6.501879, 3.377238, 2],
+          ['Abuja Office', 9.080007, 7.450597, 1]
+        ];
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: new google.maps.LatLng(10, 4),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+        for (i = 0; i < locations.length; i++) {  
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+          });
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              infowindow.setContent(locations[i][0]);
+              infowindow.open(map, marker);
+            }
+          })(marker, i));
+        }
+      </script>
   </body>
 </html>
