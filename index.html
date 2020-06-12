@@ -12,7 +12,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
+ 
     <title>Deluto</title>
   </head>
   <body>
@@ -179,8 +179,8 @@
                       id="eng"
                     >
                       <div
-                        class="toggle-img toggle-img-minus mt-2"
-                        id="main1"
+                        class="toggle-img mt-2 first-toggle"
+                        id="1"
                       ></div>
                       Engineering and Procurement (E&P)
                     </a>
@@ -188,7 +188,7 @@
 
                   <div
                     id="collapseOne"
-                    class="collapse show"
+                    class="collapse show" toggle_img_id="main1"
                     aria-labelledby="headingOne"
                     data-parent="#accordionExample"
                   >
@@ -213,15 +213,15 @@
                       id="maintenance"
                     >
                       <div
-                        class="toggle-img toggle-img-plus mt-2"
-                        id="main2"
+                        class="toggle-img mt-2 second-toggle"
+                        id="2"
                       ></div>
                       Maintenance
                     </a>
                   </h2>
 
                   <div
-                    id="collapseTwo"
+                    id="collapseTwo" toggle_img_id="main2"
                     class="collapse"
                     aria-labelledby="headingTwo"
                     data-parent="#accordionExample"
@@ -248,15 +248,15 @@
                       id="supp"
                     >
                       <div
-                        class="toggle-img toggle-img-plus mt-2"
-                        id="main3"
+                        class="toggle-img mt-2 third-toggle"
+                        id="3"
                       ></div>
                       Supplies & Logistics
                     </a>
                   </h2>
 
                   <div
-                    id="collapseThree"
+                    id="collapseThree" toggle_img_id="main3"
                     class="collapse"
                     aria-labelledby="headingThree"
                     data-parent="#accordionExample"
@@ -411,27 +411,38 @@
     </script>
     <script>
       $(document).ready(function () {
-        var counter1 = (counter2 = counter3 = 0);
-       
-
-        $(".new-collapse-link").click(function(e){
-          e.preventDefault();
-          $(".toggle-img").removeClass("toggle-img-minus")
-          var toggle_img = $(this).children(".toggle-img").first() 
-          $(toggle_img).addClass("toggle-img-minus")
-        })
-        
         $("#maintenance").click(() => {
           $("#img").attr("src", "./assets/maintenance.jpg");
-
         });
         $("#supp").click(() => {
           $("#img").attr("src", "./assets/suppliance.jpg");
         });
         $("#eng").click(() => {
           $("#img").attr("src", "./assets/Bitmap Copy 2.svg");
-          
         });
+        
+        var counter1 = (counter2 = counter3 = 0);
+
+        $(".toggle-img.first-toggle").addClass("toggle-img-minus")
+
+        $(".new-collapse-link").click(function(e){
+          e.preventDefault();
+          counter1++;
+          var previous_minus = $(".toggle-img-minus")
+
+          $(".toggle-img").removeClass("toggle-img-minus")
+
+          var toggle_img = $(this).children(".toggle-img")
+          var showing_collapse = $(".collapse.show")
+
+          $(toggle_img).toggleClass("toggle-img-minus")
+
+          if(previous_minus[0].classList == toggle_img[0].classList){
+              $(toggle_img).removeClass("toggle-img-minus")        
+          }       
+        })
+        
+   
 
         // window.addEventListener("scroll", () => {
         //   let window_height = $(window).scrollTop();
