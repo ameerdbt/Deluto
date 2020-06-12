@@ -170,7 +170,7 @@
                 <div class="accordion" id="accordionExample">
                   <h2 class="mb-0">
                     <a
-                      class="d-flex engineering-and-proc"
+                      class="d-flex engineering-and-proc new-collapse-link"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseOne"
@@ -204,7 +204,7 @@
 
                   <h2 class="mb-0">
                     <a
-                      class="d-flex engineering-and-proc"
+                      class="d-flex engineering-and-proc new-collapse-link"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseTwo"
@@ -239,7 +239,7 @@
 
                   <h2 class="mb-0">
                     <a
-                      class="d-flex engineering-and-proc"
+                      class="d-flex engineering-and-proc new-collapse-link"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseThree"
@@ -412,23 +412,25 @@
     <script>
       $(document).ready(function () {
         var counter1 = (counter2 = counter3 = 0);
-        $(".toggle-img").click(function () {
-          var toggle_div = $(`.collapse-${$(this).attr("toggle-div")}`)[0];
-          $(toggle_div).slideToggle(500);
-          var toggle_img = $(this)[0];
-          $(this).toggleClass("toggle-img-minus");
-        });
+       
+
+        $(".new-collapse-link").click(function(e){
+          e.preventDefault();
+          $(".toggle-img").removeClass("toggle-img-minus")
+          var toggle_img = $(this).children(".toggle-img").first() 
+          $(toggle_img).addClass("toggle-img-minus")
+        })
+        
         $("#maintenance").click(() => {
           $("#img").attr("src", "./assets/maintenance.jpg");
-          $("#main2").toggleClass("toggle-img-minus");
+
         });
         $("#supp").click(() => {
           $("#img").attr("src", "./assets/suppliance.jpg");
-          $("#main3").toggleClass("toggle-img-minus");
         });
         $("#eng").click(() => {
           $("#img").attr("src", "./assets/Bitmap Copy 2.svg");
-          $("#main1").toggleClass("toggle-img-minus");
+          
         });
 
         // window.addEventListener("scroll", () => {
