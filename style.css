@@ -1,36 +1,56 @@
 * {
-  font-family: Helvetica;
   scroll-behavior: smooth;
 }
 @font-face {
   font-family: Helvetica;
-  src: url(./assets/Helvetica-Font/helvetica-light-587ebe5a59211.ttf);
+  src: url(./assets/Helvetica-Neue/HelveticaNeueLight.ttf);
+}
+@font-face {
+  font-family: Helvetica Neue Regular;
+  src: url(./assets/Helvetica-Neue/HelveticaNeueMedium.ttf);
+}
+@font-face {
+  font-family: Helvetica Neue Bold;
+  src: url(./assets/Helvetica-Neue/HelveticaNeue-BoldExt.otf);
+}
+@font-face {
+  font-family: Helvetica Bold;
+  src: url(./assets/Helvetica\ 400.ttf);
+}
+@font-face {
+  font-family: Helvetica New Bold;
+  src: url(./assets/FontsFree-Net-HelveticaNeueBold.ttf);
+}
+@font-face {
+  font-family: Helvetica New Regular;
+  src: url(./assets/HelveticaNeue-Regular.ttf);
 }
 
 
 .navbar ul li a {
-  /* color: #ffffff; */
-  font-weight: bolder;
-  display: flex;
-  justify-content: space-around;
   height: 21px;
- font-weight: 600;
-  /* color: #4A4A4A; */
+  color: #4A4A4A;
   font-family: Helvetica;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 22px;
+
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+ font-weight: 600;
+  /* color: #4A4A4A; */
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .title1 {
-  font-size: 300%;
+  font-size: 40px;
   position: absolute;
   color: #fff;
-  font-family: Helvetica;
+  font-family: Helvetica New Bold;
   top: 52%;
   left: 7%;
   letter-spacing: 0.8px;
-  line-height: 65px;
+  line-height: 58px;
   font-weight: bold;
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -38,19 +58,93 @@
   height: 90px;
   width: 601px;
   color: #FFFFFF;
-  top: 80%;
-  left: 7%;
-  position: absolute;
-  font-family: "Helvetica Neue";
+  font-family: Helvetica;
   font-size: 20px;
   letter-spacing: 0.3px;
   line-height: 30px;
+  top: 73%;
+  left: 7%;
+  position: absolute;
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .special-text{
   padding: 8px 5px;
   background-color: #ffd600;
   color: #000;
+}
+.about-title{
+  height: 30px;
+  /* width: 113px; */
+  color: #232323;
+  font-family: Helvetica New Bold;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+}
+.our-services {
+  height: 29px;
+  /* width: 149px; */
+  color: #232323;
+  font-family: Helvetica New Bold;
+  font-size: 24px;
+  text-align: center;
+  /* font-weight: bold; */
+  letter-spacing: 0;
+  line-height: 29px;
+}
+
+
+.vision {
+  height: 26px;
+  width: 64px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 27px;
+}
+.mission {
+  height: 26px;
+  width: 81px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 27px;
+}
+.core-values {
+  height: 26px;
+  width: 124px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 27px;
+}
+.deluto-energy-limited {
+  height: 300px;
+  width: 555px;
+  color: #4A4A4A;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+}
+.engineering-and-proc {
+  height: 28px;
+  /* width: 407px; */
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+  margin-top: 20px;
 }
 
 #banner{
@@ -191,6 +285,47 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.copyright-2020-delu {
+  height: 17px;
+  /* width: 377px; */
+  color: #4A4A4A;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 48px;
+}
+.at-deluto-we-provid {
+  background-color: #f7f7f7;
+  padding: 25px;
+  height: 204px;
+  /* width: 505px; */
+  color: #4A4A4A;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.maintenance {
+  background-color: #f7f7f7;
+  padding: 25px;
+  height: 255px;
+  /* width: 505px; */
+  color: #4A4A4A;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
 .body {
   background-color: #f7f7f7;
   padding: 20px;
@@ -198,7 +333,94 @@ section {
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-size: 20px;
 }
-
+.our-team {
+  height: 29px;
+  /* width: 113px; */
+  color: #232323;
+  font-family: Helvetica New Bold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.our-sound-business-p {
+  height: 196px;
+  width: 510px;
+  color: #4A4A4A;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+}
+.contact-us {
+  height: 29px;
+  /* width: 127px; */
+  color: #4A4A4A;
+  font-family: Helvetica New Bold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+.lagos-office {
+  height: 24px;
+  width: 127px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+}
+.herbert-macaulay {
+  height: 21px;
+  width: 337px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+}
+.abuja-office {
+  height: 24px;
+  width: 123px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+}
+.floor-asta-gall {
+  height: 56px;
+  width: 518px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+}
+.phone-number {
+  height: 22px;
+  width: 237px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.email-address-info {
+  height: 22px;
+  width: 274px;
+  color: #4A4A4A;
+  font-family: Helvetica Neue Regular;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+}
 .card {
   padding-left: 0px;
   padding-right: 0px;
@@ -216,9 +438,9 @@ section {
 }
 
 .details {
-  font-size: 20px;
-  font-style: Helvetica;
-  font-weight: lighter;
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 300;
 
 }
 
