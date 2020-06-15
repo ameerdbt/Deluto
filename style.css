@@ -32,7 +32,7 @@
 
 .navbar ul li a {
   height: 21px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Nue Light;
   font-size: 18px;
   letter-spacing: 0;
@@ -100,7 +100,7 @@
 .vision {
   height: 26px;
   width: 64px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-size: 22px;
   font-weight: 500;
@@ -110,7 +110,7 @@
 .mission {
   height: 26px;
   width: 81px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-size: 22px;
   font-weight: 500;
@@ -120,7 +120,7 @@
 .core-values {
   height: 26px;
   width: 124px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-size: 22px;
   font-weight: 500;
@@ -147,6 +147,9 @@
   letter-spacing: 0.3px;
   line-height: 29px;
   margin-top: 20px;
+}
+.abt-img {
+  margin-left: 170px;
 }
 
 #banner {
@@ -368,7 +371,7 @@ section {
 .lagos-office {
   height: 24px;
   width: 127px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-size: 20px;
   font-weight: 500;
@@ -378,7 +381,7 @@ section {
 .herbert-macaulay {
   height: 21px;
   width: 337px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica roman;
   font-size: 18px;
   letter-spacing: 0.3px;
@@ -387,7 +390,7 @@ section {
 .abuja-office {
   height: 24px;
   width: 123px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-size: 20px;
   font-weight: 500;
@@ -397,7 +400,7 @@ section {
 .floor-asta-gall {
   height: 56px;
   width: 518px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica roman;
   font-size: 18px;
   letter-spacing: 0.3px;
@@ -406,7 +409,7 @@ section {
 .phone-number {
   height: 22px;
   width: 237px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-size: 18px;
   letter-spacing: 0.3px;
@@ -416,7 +419,7 @@ section {
 .number {
   height: 22px;
   width: 237px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica roman;
   font-size: 18px;
   letter-spacing: 0.3px;
@@ -426,17 +429,17 @@ section {
 .email-address-info {
   height: 22px;
   width: 274px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica Neue Regular;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.3px;
   line-height: 22px;
 }
-.email{
+.email {
   height: 22px;
   width: 274px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: Helvetica roman;
   font-weight: 500;
   font-size: 18px;
@@ -498,6 +501,10 @@ li {
   letter-spacing: 0;
   line-height: 29px;
 }
+.map {
+  width: 500px;
+  height: 400px;
+}
 .img-fluid {
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -557,7 +564,7 @@ li {
   }
   .sub-title {
     height: 90px;
-    width: 100%;
+    width: 62%;
     color: #ffffff;
     top: 29%;
     left: 7%;
@@ -567,5 +574,34 @@ li {
     letter-spacing: 0.3px;
     line-height: 30px;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .engineering-and-proc {
+    margin-bottom: 48px;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .at-deluto-we-provid {
+    margin-bottom: 116px;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .maintenance {
+    margin-bottom: 136px;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    margin-top: -26px;
+  }
+  .side-img {
+    display: none;
+  }
+  .abt-img {
+    margin-left: 3px;
+    margin-top: -49px;
+  }
+  .deluto-energy-limited {
+    width: 390px;
+  }
+  .our-sound-business-p {
+    width: 392px;
+  }
+  .map {
+    width: 382px;
   }
 }
