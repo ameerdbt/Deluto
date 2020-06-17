@@ -474,25 +474,25 @@ li {
     color: #fff;
     font-family: Helvetica New Bold;
     top: 31%;
-    left: 20%;
+    left: 12%;
     letter-spacing: -0.2px;
     line-height: 81px;
     font-weight: bold;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  }
-  .sub-title {
-    height: 90px;
-    width: 38%;
-    color: #ffffff;
-    top: 51%;
-    left: 20%;
-    position: absolute;
-    font-family: Helvetica Nue Light;
-    font-size: 25px;
-    letter-spacing: 0.3px;
-    line-height: 30px;
-    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  }
+}
+.sub-title {
+  height: 90px;
+  width: 38%;
+  color: #ffffff;
+  top: 60%;
+  left: 12%;
+  position: absolute;
+  font-family: Helvetica Nue Light;
+  font-size: 25px;
+  letter-spacing: 0.3px;
+  line-height: 35px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
 }
 @media (max-width: 500px) {
 
