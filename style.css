@@ -49,6 +49,11 @@
   /* color: #4A4A4A; */
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+.lis {
+  margin-right: 30px;
+  text-align: center;
+  /* justify-content: space-around; */
+}
 .title1 {
   font-size: 40px;
   position: absolute;
@@ -164,8 +169,6 @@
 #banner img {
   filter: brightness(50%);
 }
-
-
 
 section {
   padding: 60px 0;
@@ -434,9 +437,84 @@ li {
 }
 .map {
   /* width: 500px; */
-  height: 400px;
+  /* height: 400px; */
   max-width: 100%;
 }
+.lagos-map {
+  margin-top: -296px;
+  margin-left: 48px;
+  transition: all 0.5s;
+  -webkit-animation: beat 0.7s ease 0s infinite normal;
+  -moz-animation: beat 0.7s ease 0s infinite normal;
+  animation: beat 0.9s ease 0s infinite normal;
+}
+.lagos-rectangle {
+  margin-top: -296px;
+  margin-left: 48px;
+  height: 28px;
+  width: 93px;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+}
+.lagos-text {
+  margin-top: -296px;
+  margin-left: 48px;
+  height: 16px;
+  width: 36px;
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.lagos-triangle {
+  height: 18px;
+  width: 14px;
+  transform: rotate(-180deg);
+  background-color: #1c1c1c;
+}
+.abj-map {
+  margin-top: -564px;
+  margin-left: 143px;
+  transition: all 0.5s;
+  -webkit-animation: beat 0.7s ease 0s infinite normal;
+  -moz-animation: beat 0.7s ease 0s infinite normal;
+  animation: beat 0.9s ease 0s infinite normal;
+}
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes beat {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.1);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .img-fluid {
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -466,7 +544,27 @@ li {
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     margin-top: -26px;
   }
+  /* .abj-map{
+    margin-top: -37px;
+    margin-left: 116px;
+  }
+  .lagos-map {
+    margin-top: 190px;
+    margin-left: -513px;
+} */
 }
+@media (min-width: 768px) and (max-width: 769px) {
+  /* my css */
+  .abj-map {
+    margin-top: -37px;
+    margin-left: 116px;
+  }
+  .lagos-map {
+    margin-top: 190px;
+    margin-left: -513px;
+  }
+}
+
 @media (min-width: 1300px) {
   .title1 {
     font-size: 40px;
@@ -479,35 +577,34 @@ li {
     line-height: 60px;
     font-weight: bold;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.sub-title {
-  height: 90px;
-  width: 38%;
-  color: #ffffff;
-  top: 54%;
-  left: 12%;
-  position: absolute;
-  font-family: Helvetica Nue Light;
-  font-size: 20px;
-  letter-spacing: 0.3px;
-  line-height: 35px;
-  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
+  }
+  .sub-title {
+    height: 90px;
+    width: 38%;
+    color: #ffffff;
+    top: 50%;
+    left: 12%;
+    position: absolute;
+    font-family: Helvetica Nue Light;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 35px;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
 }
 @media (max-width: 500px) {
-
   #banner {
     margin-top: -108px;
   }
   .title1 {
-    font-size: 116%;
+    font-size: 107%;
     position: absolute;
     color: #fff;
     font-family: Helvetica;
-    top: 15%;
+    top: 24%;
     left: 7%;
     letter-spacing: -0.2px;
-    line-height: 38px;
+    line-height: 25px;
     font-weight: bold;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
@@ -515,11 +612,11 @@ li {
     height: 90px;
     width: 62%;
     color: #ffffff;
-    top: 28%;
+    top: 33%;
     left: 7%;
     position: absolute;
     font-family: Helvetica Nue Light;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.3px;
     line-height: 20px;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -553,7 +650,17 @@ li {
     margin-bottom: 100px;
   }
 
-  .map {
-    width: 382px;
+  .lagos-map {
+    width: 30px;
+    margin-top: -218px;
+    margin-left: 38px;
   }
+  .abj-map {
+    margin-top: -407px;
+    margin-left: 85px;
+    width: 30px;
+  }
+  /* .map {
+    width: 382px;
+  } */
 }
