@@ -660,7 +660,7 @@ li {
     margin-left: 85px;
     width: 30px;
   }
-  /* .map {
-    width: 382px;
-  } */
+  .special-text{
+    padding: 2px 2px;
+  }
 }
